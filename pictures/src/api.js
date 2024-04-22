@@ -5,12 +5,13 @@ const searchImage = async(term)=>{
     const response = await axios.get(url, {
         params: {
             query :  term
-        }
+        } 
     })
 
     console.log(term)
     console.log(response.data.results)
 
-return response.data.results
+    return response.data.results
 }
+
 export default searchImage
