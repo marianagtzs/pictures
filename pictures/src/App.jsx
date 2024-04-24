@@ -11,6 +11,7 @@ function App() {
   console.log('Usted está buscando con :' , term)
   const result = await searchImage(term)
   setImages(result)}
+  
   return (
     <div><h1>App</h1>
     <SearchBar onSubmit={handleSubmit}/>
